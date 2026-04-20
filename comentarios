@@ -1,0 +1,153 @@
+/*---------CÓDIGO Comentarios---------*/
+/*====================================|
+|          view_3903 = tablaSearch             |
+|       view_3934 = tablaComentarios        |
+|       view_3908 = tablaExpedientes        |
+|====================================*/
+
+/* Tablas */
+#view_3903 .kn-table {
+  width: 72%;
+  font-size: 16px;
+  margin: 0 auto;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.2));
+}
+#view_3998 .kn-table {
+  width: 100% !important; 
+  font-size: 16px;
+  margin: 0 auto;
+  border-radius: 10px !important;
+  overflow: hidden;
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+#view_3903 .kn-table {
+  border-radius: 10px !important;
+  overflow: hidden;
+  border-collapse: separate !important;
+  border-spacing: 0;
+}
+/*Quitar bordes en las esquinas*/
+#view_3903 thead th:first-child,
+#view_3934 thead th:first-child,
+#view_3998 thead th:first-child {
+  border-top-left-radius: 12px;
+  border-left: none;
+  border-top: none;
+}
+#view_3903 thead th:last-child,
+#view_3934 thead th:last-child,
+#view_3998 thead th:last-child {
+  border-top-right-radius: 12px;
+  border-right: none;
+  border-top: none;
+}
+#view_3903 tbody tr:last-child td:first-child,
+#view_3998 tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+#view_3903 tbody tr:last-child td:last-child,
+#view_3998 tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+/* Encabezados */
+#view_3903 .kn-table th,
+#view_3934 .kn-table th,
+#view_3998 .kn-table th {
+  background-color: #36304A;
+  color: #F5F5F5;
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+  text-align: center;
+}
+/* Centra encabezados */
+#view_3903 thead th:nth-child(1) *,
+#view_3998 thead th:nth-child(1) *,
+#view_3998 thead th:nth-child(2) * {
+  text-align: center !important;
+  display: block;
+  width: 100%;
+}
+
+/* Celdas */
+#view_3903 .kn-table td,
+#view_3934 .kn-table td,
+#view_3998 .kn-table td {
+  background-color: #F5F5F5;
+  border: 0.5px solid #e7e7e7;
+}
+
+/* Link de archivo como botón */
+#view_3903 tbody td:nth-child(2) a {
+  display: inline-block;
+  background-color: #36304A;
+  color: #F5F5F5;
+  padding: 6px 12px;
+  border-radius: 18px;
+  font-size: 0;
+  font-weight: 500;
+  text-decoration: none;
+}
+/*Link de archivo como botón hover*/
+#view_3903 tbody td a:hover {
+  background-color: #544c70;
+  color: #F5F5F5;
+}
+/*Texto del botón*/
+#view_3903 tbody td:nth-child(2) a::after {
+  content: "Ver/Comentar";
+  font-size: 16px;
+  font-weight: bold;
+}
+/*Botón Enviar*/
+#view_3903 .kn-submit button,
+#view_3922 .kn-submit button {
+  background-color: #36304A !important;
+  color: #F5F5F5 !important;
+  border-radius: 6px;
+  font-weight: 600;
+}
+#view_3903 .kn-submit button:hover,
+#view_3922 .kn-submit button:hover {
+  background-color: #544c70 !important;
+  color: #F5F5F5 !important;
+}
+
+/* Text box */
+#view_3903 input[type="text"],
+#view_3903 select,
+#view_3922 input[type="text"],
+#view_3922 select,
+#view_3922 textarea {
+  border: 1px solid #544c70;
+  border-radius: 6px;
+}
+#view_3903 input:focus,
+#view_3903 select:focus,
+#view_3922 input:focus,
+#view_3922 select:focus,
+#view_3922 textarea:focus,
+#view_3998 input:focus,
+#view_3998 select:focus {
+  border: 1px solid #544c70 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(82, 66, 133, 0.404);
+}
+/*Botón reiniciar*/
+#view_3903 .kn-clear-search.kn-button.is-link {
+  color: #36304A !important;
+}
+#view_3998 a.reset.kn-button.is-link {
+  color: #36304A !important;
+}
+/*Botón ver comentados*/
+#view_3998 .table-keyword-search .kn-button.search {
+    background:#36304A !important;
+    color:#F5F5F5 !important;
+    border-color:#36304A !important;
+}
+#view_3998 .table-keyword-search .kn-button.search:hover {
+    background:#544c70 !important;
+}
